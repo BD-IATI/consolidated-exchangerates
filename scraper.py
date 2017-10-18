@@ -3,7 +3,6 @@ from git import Repo
 from os.path import join
 from os import environ, remove
 from glob import glob
-import unicodecsv
 import exchangerates.get_rates as gr
 
 output_dir = "output"
