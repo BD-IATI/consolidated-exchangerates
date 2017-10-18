@@ -1,4 +1,5 @@
 import shutil
+import requests
 from git import Repo
 from os.path import join
 from os import environ, remove
