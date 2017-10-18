@@ -20,7 +20,7 @@ def init_git_repo():
 
 def push_to_github():
     git = Repo.init(output_dir).git
-    git.add(join(data_dir, "consolidated.csv"))
+    git.add(join("data", "consolidated.csv"))
     git.config('user.email', environ.get('MORPH_GH_EMAIL'))
     git.config('user.name', environ.get('MORPH_GH_USERNAME'))
     git.commit(m='Update')
