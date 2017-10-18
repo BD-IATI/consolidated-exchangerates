@@ -40,7 +40,7 @@ def push_to_github():
 
 def run():
     init_git_repo()
-    gr.update_rates(join(data_dir, "data/consolidated.csv"))
+    gr.update_rates(join(data_dir, "consolidated.csv"))
     push_to_github()
 
 run()
