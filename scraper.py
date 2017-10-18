@@ -24,7 +24,7 @@ def push_to_github():
     git.config('user.email', environ.get('MORPH_GH_EMAIL'))
     git.config('user.name', environ.get('MORPH_GH_USERNAME'))
     git.commit(m='Update')
-    git.push('origin', 'update')
+    git.push('origin', 'gh-pages')
     shutil.rmtree(output_dir, ignore_errors=True)
 
 def run():
